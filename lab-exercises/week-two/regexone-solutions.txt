@@ -1,0 +1,20 @@
+Hao Nguyen
+EEB C177
+Disc 1B
+
+Hw Week 2 Part 1
+1) abc
+2) 123
+3) …\.
+4) [cmf]an
+5) [A-C] [n-p] [a-c]
+6) waz{2,}up
+7) aa+b*c+
+8) \d+ files? found\?
+9) \d\.\s+abc
+10) ^Mission: successful$
+11) ^(file.+)\.pdf$
+12) (\w+ (\d+))
+13) (\d+)x(\d+)
+14) I love (cats|dogs)
+15) .*
