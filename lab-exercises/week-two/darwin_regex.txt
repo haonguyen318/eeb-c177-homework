@@ -1,1 +1,11 @@
 HW Week 2 Part 2
+1. (?<!\w)[Ss]\w+
+2. (\w+)[.!?]
+3. [^.]*.\w+
+4. [^.!?;]*(struggle for existence)[^.!?;]*[.!?]
+Extra Credit: ((?<=[.!?]\s)\w+)|(^\w+) 
+Explanation: [.!?]\s \w+ find the word following the punctuation and whitespace
+	     ?<= remove the punctuation before the first word
+	     |(^\w+) find the first word in the paragraph since the first word
+	             doesn't have a punctuation before it so the other code 
+		     wouldn't apply to it

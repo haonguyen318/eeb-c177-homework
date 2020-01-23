@@ -1,3 +1,6 @@
 HW Week 2 Pt 2
 
 1. c{2,5}
+2. ct[a|c|t]
+
+
