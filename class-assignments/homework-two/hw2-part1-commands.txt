@@ -1,0 +1,19 @@
+1. Download the text paragraphs.txt file into sandbox
+   Command: wget -c http://dev.shawntylerschwartz.com/docs/paragraphs.txt
+2. Create new folder call homework-two in class-assignments directory         
+   Command: cd Developer
+            cd repos
+            cd eeb-c177-homework
+            cd class-assignments
+            mkdir homework-two
+3. Move paragraphs.txt file into homework-two
+   Command: mv ~/Developer/repos/CSB/unix/sandbox/paragraphs.txt ./homework-two 
+	    git add -A
+	    git commit -m
+	    git push origin master
+4. Rename the paragraphs.txt file to easy-question.txt in the homework-two directory
+   Command: mv paragraphs.txt easy-question.txt
+	    git add -A
+	    git commit -m
+	    git push origin master
+ 
