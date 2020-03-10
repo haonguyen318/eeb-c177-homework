@@ -5,27 +5,24 @@ Commands for Software Carpentry Tutorial
 # First make a directory for week two in the class assignments directory
 cd /Directory/repos/eeb-c177-homework/class-assignments/week-two
 
-# Next download the data-shell.zip and move the data-shell to the week-two 
-# directory
+# Next download the data-shell.zip and move the data-shell to the week-two directory
 mv ~/Downloads/data-shell/ /Developer/repos/eeb-c177-homework/class-assignments/week-two
 cd data-shell
 
 # Follow the Software Carpentry Tutorial:
 1) Step One
-pwd #to go back to the data-shell directory
-ls -F #see what is contain inside of the data-shell directory
+pwd # to go back to the data-shell directory
+ls -F # see what is contain inside of the data-shell directory
 
 2) Create a directory
-mkdir thesis #create a new directory call thesis
-ls -F # check to see that the new directory (thesis) is in the current working  
-      # directory (data-shell)
-ls -F thesis #check what is in the thesis directory. there is nothing in it yet
+mkdir thesis # create a new directory call thesis
+ls -F # check to see that the new directory (thesis) is in the current working directory (data-shell)
+ls -F thesis # check what is in the thesis directory. There is nothing in it yet.
 
 3) Create a text file
 cd thesis # make thesis the working directory
-nano draft.txt # create a txt file using the command nano which is a text editor
-	       # type a few lines of text and then save the file using the 	
-	       # command 'ctrl o'and then exit out using the command 'ctrl x'. 
+nano draft.txt # create a txt file using the command nano which is a text editor. Then type a few lines of text and save the file using 
+	       # the command 'ctrl o' and then exit out using the command 'ctrl x'. 
 ls # we can see that the draft.txt file has been created
 
 4) Creating Files a Different Way
@@ -34,23 +31,21 @@ ls -1 # inspect how large the txt file is
 
 5) Moving files and directories
 cd ~/Desktop/data-shell/ # go to data-shell directory
-mv thesis/draft.txt thesis/quotes.txt # change the name from draft.txt to 
-				      # quotes.txt
+mv thesis/draft.txt thesis/quotes.txt # change the name from draft.txt to quotes.txt
 ls thesis # see if the file name has been changed
+
 mv thesis/quotes.txt # move quotes.txt from thesis into the working directory
 ls thesis # check to see what is in this directory. Thesis  is now empty.
-ls quotes.txt # check to see that quotes.txt is in the  working directory.
+ls quotes.txt # check to see that quotes.txt is in the working directory
 
 6) Copying files and directories
-cp quotes.txt thesis/quotations.txt # copies the file
-ls quotes.txt thesis/quotations.txt # check that there are two paths as 	
-				    # arguments
+cp quotes.txt thesis/quotations.txt # make a copy of the file
+ls quotes.txt thesis/quotations.txt # check that there are two paths as arguments
 cp -r thesis thesis_backup # copy a directory and all its contents
-ls thesis thesis_backup # list out the contents of the thesis and thesis_backup 			# directories, to view multiple directories
+ls thesis thesis_backup # list out the contents of the thesis and thesis_backup directories, to view multiple directories
 
 mkdir backup # make a backup directory
-cp amino-acids.txt animals.txt backup/ # copy multiple filenames over to the 	
-				       # backup directory
+cp amino-acids.txt animals.txt backup/ # copy multiple filenames over to the backup directory
 
 6) Removing files and directories
 rm quotes.txt # remove the quotes.txt file 
@@ -58,6 +53,5 @@ ls quotes.txt # check that the file is gone
 
 re -r thesis # remove the thesis directory recursively
 
-re -i thesis_backup/quotations.txt # remove the file and check yes or no to 
-				   # confirm the removal  
+re -i thesis_backup/quotations.txt # remove the file and check yes or no to confirm the removal  
 

@@ -10,7 +10,7 @@ The 'touch my_file.txt' command created a file called 'my_file.txt' and unlike t
 
 2) Use ls -1 to inspect the files. How large is my_file.txt?
 
-When I use the command ls -1, it shows that the my_file.txt is 0 bytes because the text editor is blank
+When I use the command ls -1, it shows that the my_file.txt is 0 bytes because the text editor is blank.
 
 3) When might you want to create a file this way?
 
