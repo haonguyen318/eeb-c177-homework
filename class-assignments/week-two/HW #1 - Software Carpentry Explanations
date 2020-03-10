@@ -1,0 +1,85 @@
+Lecture Homework #1 (Week 2)
+
+Explanation for Software Carpentry Tutorial
+
+# Creating Files a Different Way
+
+1) What did the touch command do? When you look at your current directory using the GUI file explorer, does the file show up?
+
+The 'touch my_file.txt' command created a file called 'my_file.txt' and unlike the 'nano' command, it opened the txt file without having me edit the file.   
+
+2) Use ls -1 to inspect the files. How large is my_file.txt?
+
+When I use the command ls -1, it shows that the my_file.txt is 0 bytes because the text editor is blank
+
+3) When might you want to create a file this way?
+
+This is a useful command to use when you need an empty file to be created beforehand for certain programs that requires this. The program might need an empty file to fill in with its output. This empty file can be made and act as a placeholder for the program to fill in the text later on.
+
+#Moving Files to a new folder
+
+1) Fill in the blanks to move these files to the raw/ folder (i.e. the one she forgot to put them in)
+
+mv sucrose.dat maltose.dat ../raw
+
+#Renaming Files
+
+1) After creating and saving this file you realize you misspelled the filename! You want to correct the mistake, which of the following commands could you use to do so?
+
+In order to rename the file to the correct filename, I would use command #2 which is mv statstics.txt statistics.txt
+
+#Moving and Copying
+
+1) What is the output of the closing ls command in the sequence shown below?
+
+The output would be #2 recombine. 
+
+#Using rm Safely
+
+1) What happens when we execute rm -i thesis_backup/quotations.txt? Why would we want this protection when using rm?
+
+The output that I got when I execute this command is:
+rm: remove regular file 'thesis_backup/quotations.txt'?
+We would want this protection when using rm because it lets us double check that we are deleting the files that we want to rather than just deleting the file immediately. The -i in the command allows us to enter either Y for 'yes' (delete the file) or 'N' for no (don't delete the file). 
+
+#Copy with Multiple Filenames
+
+1) For this exercise, you can test the commands in the data-shell/data directory. In the example below, what does cp do when given several filenames and a directory name?
+
+In this case, the command cp would copy the files to that directory name.
+
+2) In the example below, what does cp do when given three or more file names?
+
+Whereas in this case, the command cp would generate an error since the last argument doesn't include a directory name for cp to copy the files over to. The output of this code is cp: target 'morse.txt' is not a directory
+
+#List filenames matching a pattern
+
+1) When run in the molecules directory, which ls command(s) will produce this output? ethane.pdb methane.pdb
+
+The output would be #3 ls *t??ne.pdb 
+* = match zero or more times
+t??ne.pdb = match two characters between t and ne and ends it with .pdb
+
+#More on Wildcards
+
+1) Help Sam by filling in the blanks.
+
+cp *calibration.txt backup/calibration
+cp 2015-11-* send_to_bob/all_november_files/
+cp *-23-dataset* send_to_bob/all_datasets_created_on_a_23rd/
+
+#Organizing Directories and Files
+
+1) What command(s) covered in this lesson does she need to run so that the commands below will produce the output shown?
+
+mv *.dat analyzed
+This command will move the files fructose.dat and sucrose.dat to the analyzed directory and the command * match all files with .dat
+
+#Reproduce a folder structure
+
+1) Which of the following set of commands would achieve this objective? What would the other commands do?
+
+The first and second sets will recreate the folder structure
+The third set will give an error message because the 2016-05-20 and data directories do not exist. 
+The fourth set will achieve this by making a 2016-05-20 directory with data, processed and raw directories.
+
