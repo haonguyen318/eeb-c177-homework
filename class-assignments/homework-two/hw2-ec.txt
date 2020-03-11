@@ -1,0 +1,44 @@
+Homework 2 Extra Credit - Exercises 1.10.1 and 1.10.2 from textbook
+
+1. Change directory to CSB/unix/sandbox.  
+
+Command: cd /Developer/repos/CSB/unix/sandbox
+
+2. What is the size of the file Marra2014_data.fasta?16  
+
+#ls -lh display file sizes in human readable units (K, M, G for kilobytes,  megabytes, gigabytes).
+
+Command: ls -lh ../data/Marra2014_data.fasta
+
+#Size of file: 553K (kilobytes)
+
+3. Create a copy of Marra2014_data.fasta in the sandbox and name it  my_file.fasta.  
+
+# . = in the current directory so the copied file will in sandbox.
+
+Command: cp ../data/Marra2014_data.fasta ./my_file.fasta
+
+4. How many contigs are classified as isogroup00036?  
+
+#grep is a command that finds all the lines of a file that match a given pattern. Adding the option -c allows the command to count the lines that contain a match.
+ 
+Command: grep -c isogroup00036 my_file.fasta
+
+#There are 16 contigs that classify as isogroup00036.
+
+5. Replace the original “two-spaces” delimiter with a comma.  
+
+#cat is a command that allows us to concatenate and print files.
+#tr is a command that allows us to substitute or remove a specific character in a text file.
+#tr -s allows us to "squeeze" all consecutive occurrences of what follows after the command
+#the command tr cannot operate on a file in place (working file) meaning  that it cannot change a file directly. So we have to create a copy of the contents of a file for it to operate on and make changes to.
+
+Command: cat my_file.fasta | tr -s "  " | tr " " "," > new_file.fasta
+
+
+
+6. How many unique isogroups are in the file?  
+
+
+
+7. Which contig has the highest number of reads (numreads)? How many  reads does it have? 
