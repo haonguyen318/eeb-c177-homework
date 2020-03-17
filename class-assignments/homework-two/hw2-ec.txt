@@ -35,10 +35,8 @@ Command: grep -c isogroup00036 my_file.fasta
 
 Command: cat my_file.fasta | tr -s "  " | tr " " "," > new_file.fasta
 
-
-
 6. How many unique isogroups are in the file?  
 
-
+Command: grep '>' new_file.fasta | cut -d "," -f 4 | sort | uniq | wc -l
 
 7. Which contig has the highest number of reads (numreads)? How many  reads does it have? 
