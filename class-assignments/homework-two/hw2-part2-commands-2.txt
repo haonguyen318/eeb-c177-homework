@@ -1,4 +1,22 @@
 Homework 2 Part 2 Commands #2
 
-1. Use the pipe command to find the number of words in the first 25 lines in order to avoid making an intermediate text file
-   Command: head -25 Pacifici2013_data.csv | wc -w > Pacificiwordcount2.txt
+1. Go to the data directory
+   Command: cd ~/Developer/repos/CSB/unix/data/
+
+2. Use the pipe command to find the number of words in the first 25 lines in order to avoid making an intermediate text file
+   Command: head -n 25 Pacifici2013_data.csv | wc -w  
+
+3. Go to the homework-two directory
+   Command: cd ~/Developer/repos/eeb-c177-homework/class-assignments/homework-two/
+
+4. Create a hw2-part2-commands-2 text file
+   Command: nano hw2-part2-commands-2.txt
+
+5. Fill out the commands that were used to complete part 2 of this assignment, then save the file and exit out. 
+   Command: control o
+	    control x
+
+6. Push everything we've done for part 2 of the assignment onto GitHub
+    Command: git add -A
+    Command: git commit -m "completed homework 2 part 2 commands 2"
+    Command: git push origin master
