@@ -1,1 +1,23 @@
 HW 2 Part 3
+
+Homework 2 Part 3
+
+1. Go to the data directory
+   Command: cd ~/Developer/repos/CSB/unix/data/
+
+2. cd ../../../CSB/unix/data/
+  462  cut -d ";" | head -10
+  463  cut -d ";" 1-10 | head -1
+  464  head -n 1 Pacifici2013_data.csv | cut -d ";" 1-10
+  465  head -n 1 Pacifici2013_data.csv | cut -d ";" -f 1-10
+  466* head -n 10 Pacifi
+  467  head -n 10 Pacifici2013_data.csv | cut -d ";" -f 1  468  tail -n 5 Pacif$
+  469  tail  Pacifici2013_data.csv | cut -d ";" -f 1
+  470  tail Pacifici2013_data.csv | cut -d ";" -f 1-10
+  471  tail Pacifici2013_data.csv | cut -d ";" -f 3
+  472  head Pacifici2013_data.csv
+  473  head -n 10 Pacifici2013_data.csv | cut -d ";" -f 3
+  474  cut -d ";" -f 3 Pacifici2013_data.csv | tail -n +2 | head -n 10
+  475  history 14 > ~/Developer/repos/eeb-c177-homework/class-assignment/homewo$
+
+
