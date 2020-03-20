@@ -1,0 +1,2 @@
+The number of words in the first 25 lines is 49.
+

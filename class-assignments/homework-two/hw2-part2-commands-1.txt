@@ -1,1 +1,6 @@
-Homework 2 Part 2
+Homework 2 Part 2 Commands #1
+
+1. Go to the data directory.
+   Command: cd ~/Developers/repos/CSB/unix/data/
+2. 
+Go to 
