@@ -1,6 +1,29 @@
 Homework 2 Part 2 Commands #1
 
-1. Go to the data directory.
+1. Go to the data directory
    Command: cd ~/Developers/repos/CSB/unix/data/
-2. 
-Go to 
+2. Get the first 25 lines of the csv file
+   Command: head -25 Pacifici2013_data.csv
+3. Go to the homework-two directory
+   Command: cd ~/Developers/repos/eeb-c177-homework/class-assignments/homework-two/
+4. Create a Pacifici-25lines text file
+   Command: nano Pacifici-25lines.txt
+5. Copy and paste the first 25 lines of the Pacifici2013_data.csv to the Pacifici-25lines.txt, then save the file and exit out.
+   Command: control o
+	    control x
+6. Obtain the word count for the 25 lines of the csv file using the wc command
+   Command: wc Pacifici-25lines.txt
+7. Create a Pacifici-25wordcount text file
+   Command: nano Pacifici-25wordcount.txt
+8. Copy and paste the word count generated to the Pacifici-25wordcount.txt, then save the file and exit out.
+   Command: control o
+	    control x
+9. Create a hw2-part2-commands-1 text file
+   Command: nano hw2-part2-commands-1.txt
+10. Fill out the commands that were used to complete part 2 of this assignment, then save the file and exit out. 
+   Command: control o
+	    control x
+11. Push everything we've done for part 2 of the assignment onto GitHub
+    Command: git add -A
+    Command: git commit -m "completed homework 2 part 2"
+    Command: git push origin master
