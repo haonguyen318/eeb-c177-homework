@@ -1,0 +1,4 @@
+Homework 2 Part 2 Commands #2
+
+1. Use the pipe command to find the number of words in the first 25 lines in order to avoid making an intermediate text file
+   Command: head -25 Pacifici2013_data.csv | wc -w > Pacificiwordcount2.txt
