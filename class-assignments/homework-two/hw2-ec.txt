@@ -1,42 +1,91 @@
 Homework 2 Extra Credit - Exercises 1.10.1 and 1.10.2 from textbook
 
+Exercise 1.10.1: Next Generation Sequencing Data
+
 1. Change directory to CSB/unix/sandbox.  
 
-Command: cd /Developer/repos/CSB/unix/sandbox
+Command: cd ~/Developer/repos/CSB/unix/sandbox
 
 2. What is the size of the file Marra2014_data.fasta?16  
 
-#ls -lh display file sizes in human readable units (K, M, G for kilobytes,  megabytes, gigabytes).
+# ls -lh display file sizes in human readable units (K, M, G for kilobytes,  megabytes, gigabytes).
 
-Command: ls -lh ../data/Marra2014_data.fasta
+Command: ls -lh ~/Developer/repos/CSB/unix/data/Marra2014_data.fasta
 
-#Size of file: 553K (kilobytes)
+# Size of file: 553K (kilobytes)
 
 3. Create a copy of Marra2014_data.fasta in the sandbox and name it  my_file.fasta.  
 
-# . = in the current directory so the copied file will in sandbox.
+# use the function cp to copy a file
 
-Command: cp ../data/Marra2014_data.fasta ./my_file.fasta
+Command: cp ~/Developer/repos/CSB/unix/data/Marra2014_data.fasta ./my_file.fasta
 
 4. How many contigs are classified as isogroup00036?  
 
-#grep is a command that finds all the lines of a file that match a given pattern. Adding the option -c allows the command to count the lines that contain a match.
+# grep is a command that finds all the lines of a file that match a given pattern. Adding the option -c allows the command to count the lines that contain a match.
  
 Command: grep -c isogroup00036 my_file.fasta
 
-#There are 16 contigs that classify as isogroup00036.
+# There are 16 contigs that classify as isogroup00036.
 
 5. Replace the original “two-spaces” delimiter with a comma.  
 
-#cat is a command that allows us to concatenate and print files.
-#tr is a command that allows us to substitute or remove a specific character in a text file.
-#tr -s allows us to "squeeze" all consecutive occurrences of what follows after the command
-#the command tr cannot operate on a file in place (working file) meaning  that it cannot change a file directly. So we have to create a copy of the contents of a file for it to operate on and make changes to.
+# cat is a command that allows us to concatenate and print files.
+# tr is a command that allows us to substitute or remove a specific character in a text file.
+# tr -s allows us to "squeeze" all consecutive occurrences of what follows after the command
+# the command tr cannot operate on a file in place (working file) meaning that it cannot change a file directly. So we have to create a copy of the contents of a file for it to operate on and make changes to.
+#save the new changes to a temporary file then move it to the original file
 
-Command: cat my_file.fasta | tr -s "  " | tr " " "," > new_file.fasta
+Command: cat my_file.fasta | tr -s ' ' ',' > new_file.fasta
+         mv new_file.fasta my_file.fasta
 
 6. How many unique isogroups are in the file?  
 
-Command: grep '>' new_file.fasta | cut -d "," -f 4 | sort | uniq | wc -l
+Command: grep '>' my_file.fasta | cut -d ',' -f 4 | sort | uniq | wc -l
 
-7. Which contig has the highest number of reads (numreads)? How many  reads does it have? 
+# There are 43 unique isogroups in this file
+
+7. Which contig has the highest number of reads (numreads)? How many reads does it have? 
+
+Command: grep '>' my_file.fasta | cut -d ',' -f 1,3 | sort -t '=' -k 2 -n -r | head -n 1
+
+Output: >contig00302,numreads=3330
+
+# The contig with the highest number of reads is >contig00302 and the number of reads it has is 3330.
+
+Exercise 1.10.2: Hormone Levels in Baboons
+
+1. How many times were the levels of individuals 3 and 27 recorded? 
+
+#use the command head to examine the structure of the file
+#then use the function cut to extract the first column
+#use grep -c -w to count the number of rows where the first column is 3, and then do the same for 27
+
+Command: head -n 3 ~/Developer/repos/CSB/unix/data/Gesquiere2011_data.csv
+	 cd ~/Developer/repos/CSB/unix/data/
+	 cut -f 1 Gesquiere2011_data.csv | grep -c -w 3
+	 cut -f 1 Gesquiere2011_data.csv | grep -c -w 27
+
+# The levels of individual 3 were recorded 61 times while the levels of individual 27 was recorded 5 times.
+
+2. Write a script taking as input the file name and the ID of the individual,  and returning the number of records for that ID. 
+
+Script: cut -f 1 $1 | grep -c -w $2
+
+#This script allows you to input the file name in $1 and to input the ID of the indvidual in $2.
+
+3. [Advanced]^17 Write a script that returns the number of times each  individual was sampled. 
+
+#create a list containing all the IDs and store this list in a variable
+#then run a loop to return the number of times each individual was samples
+#call the script 
+
+baboonsIDs=`tail -n +2 ~/Developer/repos/CSB/unix/data/Gesquiere2011_data.csv | cut -f 1 | sort -n | uniq`
+
+for baboons in $baboonsIDs
+do
+  baboonscounts='bash number_individuals.sh ~/Developer/repos/CSB/unix/data/Gesquiere2011_data.csv | grep -c -w $baboons'
+  echo "ID:" $baboons "counts:" $baboonscounts
+
+
+

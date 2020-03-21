@@ -1,0 +1,15 @@
+Homework 2 Part 5 Commands
+
+1. tail -n +2 ~/Developer/repos/CSB/unix/data/Pacifici2013_data.csv | cut -d ";" -f 2-6 | tr ";" " " | sort -r -n -k 6 > bodym.csv
+
+2. nano hw2-part4-commands.txt
+
+3. control o
+
+4. control x
+
+5. git add -A
+
+6. git commit -m "completed homework 2 part 5"
+
+7. git push origin master

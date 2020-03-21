@@ -30,4 +30,4 @@ Homework 2 Part 4 Commands
 
 15. git commit -m "completed homework 2 part 4"
 
-16. git push origin master 
+16. git push origin master
