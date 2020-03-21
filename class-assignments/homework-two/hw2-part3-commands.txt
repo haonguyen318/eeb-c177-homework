@@ -1,23 +1,35 @@
-HW 2 Part 3
+Homework 2 Part 3 Commands
 
-Homework 2 Part 3
+1. cd ~/Developer/repos/eeb-c177-homework/class-assignments/homework-two/
 
-1. Go to the data directory
-   Command: cd ~/Developer/repos/CSB/unix/data/
+2. ls ~/Developer/repos/CSB/unix/data | wc -l > pipe-data-lines.txt
 
-2. cd ../../../CSB/unix/data/
-  462  cut -d ";" | head -10
-  463  cut -d ";" 1-10 | head -1
-  464  head -n 1 Pacifici2013_data.csv | cut -d ";" 1-10
-  465  head -n 1 Pacifici2013_data.csv | cut -d ";" -f 1-10
-  466* head -n 10 Pacifi
-  467  head -n 10 Pacifici2013_data.csv | cut -d ";" -f 1  468  tail -n 5 Pacif$
-  469  tail  Pacifici2013_data.csv | cut -d ";" -f 1
-  470  tail Pacifici2013_data.csv | cut -d ";" -f 1-10
-  471  tail Pacifici2013_data.csv | cut -d ";" -f 3
-  472  head Pacifici2013_data.csv
-  473  head -n 10 Pacifici2013_data.csv | cut -d ";" -f 3
-  474  cut -d ";" -f 3 Pacifici2013_data.csv | tail -n +2 | head -n 10
-  475  history 14 > ~/Developer/repos/eeb-c177-homework/class-assignment/homewo$
+3. cat ~/Developer/repos/CSB/unix/data/miRNA/ggo_miR.fasta
 
+4. ~/Developer/repos/CSB/unix/data/miRNA/hsa_miR.fasta | wc -c > fasta-cat.txt
 
+5. head ~/Developer/repos/CSB/unix/data/Pacifici2013_data.csv
+
+6. nano Pacifici-delim.txt
+
+7. control o
+
+8. control x
+
+9. git add -A
+
+10. git commit -m "completed homework 2 part 3"
+
+11. git push origin master
+
+9. head -n 10 ~/Developer/repos/CSB/unix/data/Pacifici2013_data.csv | cut -d ";" -f 3
+
+10. tail -n 5 ~/Developer/repos/CSB/unix/data/Pacifici2013_data.csv
+
+11. tail -n +2 ~/Developer/repos/CSB/unix/data/Pacifici2013_data.csv | head -n 10 > Pacifici-ten.txt
+
+12. nano hw2-part3-commands.txt
+
+13. control o
+
+14. control x

@@ -1,1 +1,10 @@
-HW 2 Part 3
+7580;Rodentia;Cricetidae;Eligmodontia;Eligmodontia typus;17.37;PanTHERIA;292;PanTHERIA;254.64;73.74;calculated;147.5856;147.5856;Rspan-AFR(SM+Gest)
+42632;Rodentia;Cricetidae;Microtus;Microtus oregoni;20.35;PanTHERIA;456.25;PanTHERIA;445.85;58.06;calculated;187.3565;187.3565;Rspan-AFR(SM+Gest)
+42653;Rodentia;Cricetidae;Peromyscus;Peromyscus gossypinus;27.68;PanTHERIA;471.45833335;PanTHERIA;444.87833335;72.58;calculated;201.59471667;201.5947166715;Rspan-AFR(SM+Gest)
+42662;Macroscelidea;Macroscelididae;Elephantulus;Elephantulus myurus;59.51;PanTHERIA;401.5;PanTHERIA;412.34;90.48;calculated;210.0586;210.0586;Rspan-AFR(SM+Gest)
+16652;Rodentia;Cricetidae;Peromyscus;Peromyscus boylii;23.9;PanTHERIA;547.5;PanTHERIA;514.13;79.97;calculated;229.0677;229.0677;Rspan-AFR(SM+Gest)
+17035;Rodentia;Cricetidae;Phodopus;Phodopus campbelli;27.06;PanTHERIA;653.95833335;PanTHERIA;628.07833335;67.06;calculated;249.20271667;249.2027166715;Rspan-AFR(SM+Gest)
+42617;Rodentia;Cricetidae;Myodes;Myodes gapperi;19.83;PanTHERIA;608.33333335;PanTHERIA;531.94333335;112.39;calculated;266.65356667;266.6535666715;Rspan-AFR(SM+Gest)
+41410;Eulipotyphla;Soricidae;Sorex;Sorex palustris;13.07;PanTHERIA;547.5;PanTHERIA;448.32;143.18;calculated;273.1928;273.1928;Rspan-AFR(SM+Gest)
+42678;Rodentia;Cricetidae;Reithrodontomys;Reithrodontomys humulis;8.25;PanTHERIA;817.90416665;PanTHERIA;795.38416665;66.78;calculated;297.44140833;297.4414083285;Rspan-AFR(SM+Gest)
+42675;Rodentia;Cricetidae;Oryzomys;Oryzomys palustris;53.26;PanTHERIA;866.875;PanTHERIA;841.695;74.66;calculated;318.75155;318.75155;Rspan-AFR(SM+Gest)
