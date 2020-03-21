@@ -1,1 +1,33 @@
-HW2 Part 4
+Homework 2 Part 4 Commands
+
+1. wget -c http://dev.shawntylerschwartz.com/docs/fish_species.txt
+
+2. git add -A
+
+3. git commit -m "downloaded fish species file"
+
+4. git push origin master
+
+5. touch fishes-sort.txt
+
+6. touch fishes-rev-sort.txt
+
+7. touch fishes-unique.txt
+
+8. sort -n fish_species.txt > fishes-sort.txt
+
+9. sort -r fish_species.txt > fishes-rev-sort.txt
+
+10. uniq fish_species.txt > fishes-unique.txt
+
+11. nano hw2-part4-commands.txt
+
+12. control o
+
+13. control x
+
+14. git add -A
+
+15. git commit -m "completed homework 2 part 4"
+
+16. git push origin master 

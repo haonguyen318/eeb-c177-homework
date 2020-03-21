@@ -16,13 +16,7 @@ Homework 2 Part 3 Commands
 
 8. control x
 
-9. git add -A
-
-10. git commit -m "completed homework 2 part 3"
-
-11. git push origin master
-
-9. head -n 10 ~/Developer/repos/CSB/unix/data/Pacifici2013_data.csv | cut -d ";" -f 3
+9. head -n 10 ~/Developer/repos/CSB/unix/data/Pacifici2013_data.csv | cut -d ";" -f3
 
 10. tail -n 5 ~/Developer/repos/CSB/unix/data/Pacifici2013_data.csv
 
@@ -33,3 +27,9 @@ Homework 2 Part 3 Commands
 13. control o
 
 14. control x
+
+15. git add -A
+
+16. git commit -m "completed homework 2 part 3"
+
+17. git push origin master
